@@ -4,7 +4,6 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { HeadContent, Outlet, createRootRouteWithContext } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
-import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { trpc } from "@/utils/trpc";
 
@@ -20,17 +19,30 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
   head: () => ({
     meta: [
       {
-        title: "chronicles-of-all-creation",
+        title: "Chronicles of All Creation",
       },
       {
         name: "description",
-        content: "chronicles-of-all-creation is a web application",
+        content:
+          "Chronicles of All Creation — a Create-driven Minecraft modpack where machinery carries you from your first cogwheel to colonies among the stars. Join at minecraft.citadel-codex.com",
+      },
+      {
+        property: "og:title",
+        content: "Chronicles of All Creation",
+      },
+      {
+        property: "og:description",
+        content: "From the first cogwheel to the last unmapped star.",
+      },
+      {
+        property: "og:image",
+        content: "/hero.png",
       },
     ],
     links: [
       {
         rel: "icon",
-        href: "/favicon.ico",
+        href: "/logo.png",
       },
     ],
   }),
@@ -43,17 +55,19 @@ function RootComponent() {
       <ThemeProvider
         attribute="class"
         defaultTheme="dark"
+        forcedTheme="dark"
         disableTransitionOnChange
         storageKey="vite-ui-theme"
       >
-        <div className="grid grid-rows-[auto_1fr] h-svh">
-          <Header />
-          <Outlet />
-        </div>
+        <Outlet />
         <Toaster richColors />
       </ThemeProvider>
-      <TanStackRouterDevtools position="bottom-left" />
-      <ReactQueryDevtools position="bottom" buttonPosition="bottom-right" />
+      {import.meta.env.DEV ? (
+        <>
+          <TanStackRouterDevtools position="bottom-left" />
+          <ReactQueryDevtools position="bottom" buttonPosition="bottom-right" />
+        </>
+      ) : null}
     </>
   );
 }

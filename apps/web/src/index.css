@@ -1,1 +1,103 @@
 @import "@chronicles-of-all-creation/ui/globals.css";
+
+:root {
+  --ink: #0a0d16;
+  --ink-soft: #10141f;
+  --ink-deep: #060810;
+  --parchment: #e9e2d0;
+  --gold: #c9962e;
+  --gold-bright: #e5b13f;
+  --copper: #b3672f;
+  --steam: #7d95b5;
+  --ember: #d97706;
+  --background: var(--ink);
+  --foreground: var(--parchment);
+  --primary: var(--gold);
+  --primary-foreground: var(--ink);
+  --muted: #171c2a;
+  --muted-foreground: color-mix(in oklab, var(--parchment) 55%, transparent);
+  --border: color-mix(in oklab, var(--gold) 18%, transparent);
+  --ring: var(--gold);
+  --font-display: "Cinzel", "Times New Roman", serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-deep: var(--ink-deep);
+  --color-parchment: var(--parchment);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-copper: var(--copper);
+  --color-steam: var(--steam);
+  --color-ember: var(--ember);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--ink);
+    color: var(--parchment);
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--gold) 40%, transparent);
+    color: var(--parchment);
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
+@utility font-body {
+  font-family: var(--font-body);
+}
+
+@keyframes fade-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-drift {
+  from {
+    transform: scale(1.05) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.12) translate3d(0, -1.5%, 0);
+  }
+}
+
+@utility animate-fade-rise {
+  animation: fade-rise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility animate-hero-drift {
+  animation: hero-drift 28s ease-in-out alternate infinite;
+}
+
+@utility delay-150 {
+  animation-delay: 150ms;
+}
+
+@utility delay-300 {
+  animation-delay: 300ms;
+}
+
+@utility delay-500 {
+  animation-delay: 500ms;
+}

@@ -27,8 +27,16 @@ Then, run the development server:
 pnpm run dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) in your browser to see the web application.
+Open [http://localhost:3001](http://localhost:3001) in your browser to see the modpack landing page.
 The API is running at [http://localhost:3000](http://localhost:3000).
+
+### Landing page
+
+The public site lives in `apps/web` and includes Hero, About, Features, and Footer sections.
+
+- Edit copy, server IP, and footer URLs in `apps/web/src/lib/constants.ts`
+- Assets live in `apps/web/public/` (`logo.png`, `hero.png`, `icons/*`)
+- Landing UI components live in `apps/web/src/components/landing/`
 
 ## UI Customization
 
