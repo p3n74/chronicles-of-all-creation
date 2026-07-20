@@ -104,16 +104,28 @@ Re-run it whenever the SNBT files or the icon pack change.
 - `pnpm run check-types`: Check TypeScript types across all apps
 - `pnpm run export:quests`: Regenerate quest data + icons from `quests/` and `icons/`
 
-## Deployment (Docker)
+## Deployment (Docker / Coolify)
 
-The `Dockerfile` builds the static web app and serves it with nginx (SPA
-fallback included, so `/quests` works on refresh).
+Production image runs the Hono API and the Vite SPA from one process
+(Bun + Turborepo), same pattern as the other Coolify apps on the server.
+Health check: `GET /healthz`.
 
 ```bash
-# VITE_SERVER_URL is baked into the client bundle at build time
-docker build -t chronicles-web --build-arg VITE_SERVER_URL=https://api.example.com .
-docker run -p 8080:80 chronicles-web
+# Build — bake the public HTTPS origin (browser calls this for /trpc)
+docker build \
+  --build-arg VITE_SERVER_URL=https://chronicles.example.com \
+  -t chronicles-of-all-creation .
+
+# Run — Coolify supplies env vars
+docker run --rm -p 3000:3000 \
+  -e PORT=3000 \
+  -e NODE_ENV=production \
+  -e CORS_ORIGIN=https://chronicles.example.com \
+  chronicles-of-all-creation
 ```
 
-If you are not using the tRPC server yet, the default build arg
-(`http://localhost:3000`) is fine; the landing and quest pages are fully static.
+Coolify:
+- Port: `3000`
+- Health check path: `/healthz`
+- Build arg: `VITE_SERVER_URL=https://your.domain`
+- Runtime env: `CORS_ORIGIN=https://your.domain` (same origin as the site)
