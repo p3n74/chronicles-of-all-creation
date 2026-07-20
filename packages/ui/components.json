@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "base-lyra",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/styles/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "aliases": {
+    "components": "@chronicles-of-all-creation/ui/components",
+    "utils": "@chronicles-of-all-creation/ui/lib/utils",
+    "hooks": "@chronicles-of-all-creation/ui/hooks",
+    "lib": "@chronicles-of-all-creation/ui/lib",
+    "ui": "@chronicles-of-all-creation/ui/components"
+  },
+  "menuColor": "default",
+  "menuAccent": "subtle",
+  "registries": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "chronicles-of-all-creation",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "check-types": "turbo run check-types",
+    "dev:web": "turbo run dev -F web",
+    "dev:server": "turbo run dev -F server"
+  },
+  "dependencies": {
+    "@chronicles-of-all-creation/env": "workspace:*",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@chronicles-of-all-creation/config": "workspace:*",
+    "@types/node": "catalog:",
+    "turbo": "^2.10.2",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@10.14.0"
+}

@@ -1,0 +1,3 @@
+{
+  "extends": "@chronicles-of-all-creation/config/tsconfig.base.json"
+}
