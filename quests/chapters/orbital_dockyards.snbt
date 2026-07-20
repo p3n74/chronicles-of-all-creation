@@ -1,0 +1,328 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "orbital_dockyards"
+	group: "59C57AB9716E3A08"
+	icon: {
+		id: "stellaris:antenna"
+	}
+	id: "743788584E632B20"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "stellaris:antenna"
+			}
+			id: "1C2D2285C3892EE7"
+			rewards: [{
+				id: "41547B3B19F7B903"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "49CADB10F1773429"
+				item: { count: 1, id: "stellaris:antenna" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C2D2285C3892EE7"]
+			id: "6CA2A311EA9A087F"
+			rewards: [{
+				id: "78AAD7653F6FB03F"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "3FE3C72C5F6A15A1"
+				item: { count: 1, id: "stellaris:base_module_tier_1" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1C2D2285C3892EE7"]
+			id: "05445337DCFDDDB6"
+			rewards: [{
+				id: "615A9E55B9A5F554"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2BF31B21802F9787"
+				item: { count: 1, id: "stellaris:upgrade_station" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6CA2A311EA9A087F"]
+			icon: {
+				id: "stellaris:steel_ingot"
+			}
+			id: "39AB40AB97504AFA"
+			rewards: [{
+				id: "1A92688272424A99"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "350CFB6D83AC2050"
+				item: { count: 100, id: "stellaris:steel_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6CA2A311EA9A087F"]
+			id: "054FC0C1A00560B8"
+			rewards: [{
+				id: "0F9FB0B41D8465D1"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "13D4987C7AA184D1"
+				item: { count: 100, id: "stellaris:heavy_metal_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"05445337DCFDDDB6"
+				"39AB40AB97504AFA"
+				"054FC0C1A00560B8"
+			]
+			id: "672F3851201AC0D3"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				id: "1F5836452B416325"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "6FF32A61B77AEE7B"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["672F3851201AC0D3"]
+			id: "2AE85213E2DDC2CB"
+			rewards: [{
+				id: "4F2F1EDE4F6AE616"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "777CBD1562BD4276"
+				item: { count: 1, id: "stellaris:base_module_tier_2" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2AE85213E2DDC2CB"]
+			id: "0EFCE8DF450A2676"
+			rewards: [{
+				id: "447CA4B77B5ABDFB"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "3F564CC3EC4882B5"
+				item: { count: 150, id: "stellaris:steel_ingot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2AE85213E2DDC2CB"]
+			id: "31DCB8B76AC0C623"
+			rewards: [{
+				id: "5475F3E655549C93"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "3DDEDC4EB6F642DA"
+				item: { count: 150, id: "stellaris:heavy_metal_ingot" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0EFCE8DF450A2676"
+				"31DCB8B76AC0C623"
+			]
+			id: "6746B10E11CB3502"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				id: "320D13709B9491A5"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "490D8E33B8DCA7A8"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6746B10E11CB3502"]
+			id: "4AFA3B167B0ECBF3"
+			rewards: [{
+				id: "1256C9B9F7788709"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "0F7AEE3960337ABE"
+				item: { count: 1, id: "stellaris:gravity_normalizer_module" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6746B10E11CB3502"]
+			id: "37B3851E4FCE9420"
+			rewards: [{
+				id: "7AB370E6934705CD"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "5B4D54B98DBD6B4E"
+				item: { count: 1, id: "stellaris:jet_module" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6746B10E11CB3502"]
+			id: "199A161D3EB0F3FB"
+			rewards: [{
+				id: "2E1CFF4650555FBC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "37CB38102EE9162F"
+				item: { count: 1, id: "stellaris:auto_feeder_module" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"4AFA3B167B0ECBF3"
+				"37B3851E4FCE9420"
+				"199A161D3EB0F3FB"
+			]
+			id: "11235233C4C73BF8"
+			rewards: [{
+				id: "57AA28E5F8FE091B"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "29EB3F333ABF64B0"
+				item: { count: 200, id: "stellaris:steel_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"4AFA3B167B0ECBF3"
+				"37B3851E4FCE9420"
+				"199A161D3EB0F3FB"
+			]
+			id: "7089BF2826AA6C79"
+			rewards: [{
+				id: "7F917673DA887C33"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "327299BE0E0D16DF"
+				item: { count: 200, id: "stellaris:heavy_metal_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"11235233C4C73BF8"
+				"7089BF2826AA6C79"
+			]
+			id: "169858AC1A96F30F"
+			shape: "hexagon"
+			size: 2d
+			rewards: [{
+				id: "1D5A7F8398D59B53"
+				type: "xp"
+				xp: 400
+			}]
+			tasks: [{
+				id: "10FC2BA7B373FD14"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["169858AC1A96F30F"]
+			id: "403E9F3C41BBC052"
+			rewards: [{
+				id: "6EE9D9375F886E77"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4CE11E185261E695"
+				item: { count: 1, id: "stellaris:vacuumator" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["169858AC1A96F30F"]
+			id: "6E8884E35B1FE44A"
+			size: 1.5d
+			rewards: [{
+				id: "67871D8EC0189425"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "472C8435CC49F9CD"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 15.0d
+		}
+	]
+}

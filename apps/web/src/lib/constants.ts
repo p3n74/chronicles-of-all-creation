@@ -5,43 +5,44 @@ export const SITE = {
   name: "Chronicles of All Creation",
   tagline: "From the first cogwheel to the last unmapped star.",
   description:
-    "Chronicles of All Creation is a Create-driven modpack where every gear you place is a step off the planet. Master kinetic machinery, string railways and airships across the world, industrialize enchantment itself — then pour crude into a rocket and charter colonies on the Moon, Mars, Venus, and Mercury. A hand-written questbook chronicles the whole ascent, from Session Zero to your own orbital dockyard.",
+    "A Create-driven modpack where every gear is a step off the planet. Master kinetics, string railways and airships across the overworld, then refine fuel and charter colonies on the Moon, Mars, Venus, and Mercury. A hand-written questbook charts the ascent from Session Zero to orbital dockyard.",
 } as const;
 
 export const FEATURES = [
   {
-    title: "Engineer's Paradise",
+    title: "Kinetic industry",
     description:
-      "Create 6 and dozens of hand-picked addons — steam boilers, diesel generators, trains, cannons, jetpacks, and factories limited only by your imagination.",
+      "Create 6 plus curated addons: boilers, diesel, trains, cannons, jetpacks, and factories limited by what you can power.",
     icon: "/icons/machinery.png",
-    alt: "Brass cogwheels icon",
+    alt: "Brass cogwheels",
   },
   {
-    title: "Logistics & Travel",
+    title: "Freight and flight",
     description:
-      "Bridge continents with railway networks, hypertubes, airships, and aircraft. Move people, freight, and whole contraptions across a living overworld.",
+      "Railways, hypertubes, airships, and aircraft move people, freight, and whole contraptions across a living world.",
     icon: "/icons/logistics.png",
-    alt: "Steam locomotive and airship icon",
+    alt: "Locomotive and airship",
   },
   {
-    title: "Beyond the Cradle",
+    title: "Off-world charters",
     description:
-      "Follow the Launch Codex: refine rocket fuel, suit up, and lift off. Plant colonial charters on the Moon, Mars, Venus, and Mercury, then raise your own space station.",
+      "Refine rocket fuel, suit up, and lift off. Plant colonies on the Moon, Mars, Venus, and Mercury, then raise a station.",
     icon: "/icons/exploration.png",
-    alt: "Brass rocket and crescent moon icon",
+    alt: "Brass rocket and moon",
   },
 ] as const;
 
+/** Questbook chapter groups with their real in-game pack icons. */
 export const QUEST_GROUPS = [
-  "Adventurer's Primer",
-  "Engineer's Paradise",
-  "Industry & Ordnance",
-  "Logistics & Travel",
-  "Hearth & Harvest",
-  "Champions of the Realm",
-  "Spellwright Codex",
-  "Beyond the Cradle",
-  "Tavern Tales",
+  { title: "Adventurer's Primer", icon: "/quest-icons/naturescompass__naturescompass.png" },
+  { title: "Engineer's Paradise", icon: "/quest-icons/create__cogwheel.png" },
+  { title: "Industry & Ordnance", icon: "/quest-icons/createbigcannons__cannon_mount.png" },
+  { title: "Logistics & Travel", icon: "/quest-icons/create__track.png" },
+  { title: "Hearth & Harvest", icon: "/quest-icons/minecraft__bread.png" },
+  { title: "Champions of the Realm", icon: "/quest-icons/minecraft__diamond_sword.png" },
+  { title: "Spellwright Codex", icon: "/quest-icons/irons_spellbooks__inscription_table.png" },
+  { title: "Beyond the Cradle", icon: "/quest-icons/stellaris__rocket.png" },
+  { title: "Tavern Tales", icon: "/quest-icons/mca__engagement_ring.png" },
 ] as const;
 
 export const DOWNLOAD_URL =

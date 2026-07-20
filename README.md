@@ -21,6 +21,13 @@ First, install the dependencies:
 pnpm install
 ```
 
+Copy the example env files (required for local validation):
+
+```bash
+cp apps/web/.env.example apps/web/.env
+cp apps/server/.env.example apps/server/.env
+```
+
 Then, run the development server:
 
 ```bash
@@ -76,6 +83,18 @@ chronicles-of-all-creation/
 │   ├── api/         # API layer / business logic
 ```
 
+## Questbook data pipeline
+
+The `/quests` page renders the real FTB Quests book from the pack's SNBT files.
+
+- `quests/` holds the FTB Quests SNBT (chapters, groups, lang)
+- `icons/` holds jar-extracted item/block textures (`unique_items/`, `by_chapter/`)
+- `pnpm export:quests` assembles flat block faces into isometric cubes, then
+  regenerates `apps/web/src/lib/generated/quests.json` and
+  `apps/web/public/quest-icons/`
+
+Re-run it whenever the SNBT files or the icon pack change.
+
 ## Available Scripts
 
 - `pnpm run dev`: Start all applications in development mode
@@ -83,3 +102,18 @@ chronicles-of-all-creation/
 - `pnpm run dev:web`: Start only the web application
 - `pnpm run dev:server`: Start only the server
 - `pnpm run check-types`: Check TypeScript types across all apps
+- `pnpm run export:quests`: Regenerate quest data + icons from `quests/` and `icons/`
+
+## Deployment (Docker)
+
+The `Dockerfile` builds the static web app and serves it with nginx (SPA
+fallback included, so `/quests` works on refresh).
+
+```bash
+# VITE_SERVER_URL is baked into the client bundle at build time
+docker build -t chronicles-web --build-arg VITE_SERVER_URL=https://api.example.com .
+docker run -p 8080:80 chronicles-web
+```
+
+If you are not using the tRPC server yet, the default build arg
+(`http://localhost:3000`) is fine; the landing and quest pages are fully static.

@@ -1,0 +1,203 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "launch_codex"
+	group: "59C57AB9716E3A08"
+	icon: {
+		id: "stellaris:rocket"
+	}
+	id: "24825890B2322013"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0FA99AF669197F07"
+			rewards: [{
+				id: "3139B7812D5D6269"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "3B3B227C0BCF43E8"
+				item: { count: 1, id: "stellaris:rocket_station" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0FA99AF669197F07"]
+			id: "3FDB8203063D43BF"
+			rewards: [{
+				id: "0670B8075419DB0A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "5E9588F5FDCA6532"
+					item: { count: 1, id: "stellaris:rocket_nose_cone" }
+					type: "item"
+				}
+				{
+					id: "4315461A36CCA0EF"
+					item: { count: 1, id: "stellaris:rocket_fin" }
+					type: "item"
+				}
+				{
+					id: "04FDA12BF2215D90"
+					item: { count: 1, id: "stellaris:rocket_engine" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3FDB8203063D43BF"]
+			id: "308B09693C048F8C"
+			rewards: [{
+				id: "03F3FF212DAEA091"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "07789D191066BC81"
+				item: { count: 9, id: "stellaris:rocket_launch_pad" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["308B09693C048F8C"]
+			id: "3C9D45F6AD9DFFAC"
+			size: 1.5d
+			rewards: [{
+				id: "2C26C7F388BDE3B3"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [
+				{
+					id: "1A626D288AC5F3C6"
+					item: { count: 1, id: "stellaris:space_suit_helmet" }
+					type: "item"
+				}
+				{
+					id: "5A1180CBC5C86AE0"
+					item: { count: 1, id: "stellaris:space_suit_chestplate" }
+					type: "item"
+				}
+				{
+					id: "0EB17D19E3A18814"
+					item: { count: 1, id: "stellaris:space_suit_leggings" }
+					type: "item"
+				}
+				{
+					id: "7200ACCCDDD27D1A"
+					item: { count: 1, id: "stellaris:space_suit_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C9D45F6AD9DFFAC"]
+			id: "1A7B98174E74DFD8"
+			rewards: [{
+				id: "3C64E142CC21E674"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "26DB8CB812375AAF"
+				item: { count: 1, id: "stellaris:rocket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1A7B98174E74DFD8"]
+			id: "143112306BE4AD58"
+			rewards: [{
+				id: "7FE0E155F1E2A8C5"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [
+				{
+					id: "211CB82D2E80F98F"
+					item: { count: 1, id: "stellaris:fuel_bucket" }
+					type: "item"
+				}
+				{
+					id: "4DEF6656FCEAB832"
+					item: { count: 1, id: "stellaris:oxygen_tank" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["143112306BE4AD58"]
+			id: "75379C11C1674F55"
+			rewards: [{
+				id: "76944BBBDACADE42"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "0A1507EDB083F6BD"
+				item: { count: 1, id: "stellaris:big_fuel_tank_upgrade" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["143112306BE4AD58"]
+			icon: {
+				id: "stellaris:moon_sand"
+			}
+			id: "5FD276DCFF71F7FF"
+			shape: "hexagon"
+			size: 2d
+			rewards: [{
+				id: "5CFAE17752799958"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "37A6920B5AA3F699"
+				item: { count: 16, id: "stellaris:moon_sand" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"75379C11C1674F55"
+				"5FD276DCFF71F7FF"
+			]
+			id: "0EA9572E3D72900A"
+			size: 1.5d
+			rewards: [{
+				id: "22D530A5589E2ACA"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "33FA1CF833ADAC32"
+				item: { count: 1, id: "stellaris:moon_globe" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+	]
+}

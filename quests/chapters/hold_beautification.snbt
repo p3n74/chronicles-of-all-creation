@@ -1,0 +1,77 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "hold_beautification"
+	group: "0ED9F00893D42C69"
+	icon: {
+		id: "comforts:sleeping_bag_red"
+	}
+	id: "131BA0C6BB5B38C2"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1D8C500961D14D1C"
+			rewards: [{
+				id: "6A0FC474A1BB2FD8"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0631796BB00E9219"
+				item: { count: 1, id: "comforts:sleeping_bag_red" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D8C500961D14D1C"]
+			id: "459079B6037FABCD"
+			rewards: [{
+				id: "0F31241C79BBE33C"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "19F7D5CE1A5A0748"
+				item: { count: 1, id: "comforts:rope_and_nail" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["459079B6037FABCD"]
+			id: "314C2E3F9F00D2E4"
+			rewards: [{
+				id: "2D0285A186DFFFE1"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "2EB9824C9C30BD3F"
+				item: { count: 1, id: "comforts:hammock_white" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["314C2E3F9F00D2E4"]
+			id: "27234DED3B1FF84F"
+			size: 1.5d
+			rewards: [{
+				id: "66031727B2BB5FC5"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "720CCBFEC810D7E7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+	]
+}

@@ -1,0 +1,318 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "first_cantrips"
+	group: "32AE22B1D4F114FC"
+	icon: {
+		id: "irons_spellbooks:inscription_table"
+	}
+	id: "6E581B1A72CF35C6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "irons_spellbooks:scroll"
+			}
+			id: "660A11310A66CCA8"
+			rewards: [{
+				id: "761752E9FE0DF722"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0DF563FEBABF8ADB"
+				item: { count: 1, id: "irons_spellbooks:scroll" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["660A11310A66CCA8"]
+			id: "738B01EC0AA00D54"
+			rewards: [{
+				id: "06466B69ACCA9619"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "5AB57F836CDB416C"
+				item: { count: 1, id: "irons_spellbooks:inscription_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["738B01EC0AA00D54"]
+			id: "291D76E9015E4B33"
+			rewards: [{
+				id: "6569916E3D216E94"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "1DAFA58209B005D5"
+				item: { count: 1, id: "irons_spellbooks:wimpy_spell_book" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["738B01EC0AA00D54"]
+			id: "6CEEBF5036D6D428"
+			rewards: [{
+				id: "3E96DCB4F6D35AB9"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "6CFBFF77EB38B840"
+				item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"291D76E9015E4B33"
+				"6CEEBF5036D6D428"
+			]
+			id: "2B19B2D372A0BBD2"
+			rewards: [{
+				id: "52319A0A090D84BD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "77C767B646231139"
+				item: { count: 1, id: "irons_spellbooks:iron_spell_book" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2B19B2D372A0BBD2"]
+			icon: {
+				id: "minecraft:rotten_flesh"
+			}
+			id: "1991E6039E2367D9"
+			rewards: [{
+				id: "47D04C3A0EEFF6E6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "150C519DA3B66CFE"
+				item: { count: 16, id: "minecraft:rotten_flesh" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2B19B2D372A0BBD2"]
+			id: "5F1A67D09C951E8A"
+			rewards: [{
+				id: "218524A7584147B8"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "0BC17A8D3FE00151"
+				item: { count: 1, id: "irons_spellbooks:wayward_compass" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2B19B2D372A0BBD2"]
+			id: "2D3DCD3818AD1192"
+			size: 1.5d
+			rewards: [{
+				id: "3D3602A0F19EEB21"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "01524FC6AE9D9545"
+				item: { count: 1, id: "irons_spellbooks:gold_spell_book" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1991E6039E2367D9"
+				"2D3DCD3818AD1192"
+			]
+			icon: {
+				id: "minecraft:blaze_rod"
+			}
+			id: "0BF475580BBE9AED"
+			rewards: [{
+				id: "0CC4A2A9D8C1B643"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7456779372E30A80"
+				item: { count: 1, id: "minecraft:blaze_rod" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0BF475580BBE9AED"]
+			id: "2B4B0BCF6B5D7014"
+			rewards: [{
+				id: "3ECAA4A642D79B95"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "2FA5DE356C388F58"
+				item: { count: 1, id: "irons_spellbooks:scroll_forge" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0BF475580BBE9AED"]
+			id: "4E894AA6CE4C05E3"
+			rewards: [{
+				id: "1A3967D9D6D618C8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5FE6C4F8732DFBFD"
+				item: { count: 16, id: "irons_spellbooks:arcane_essence" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4E894AA6CE4C05E3"]
+			icon: {
+				id: "irons_spellbooks:blood_vial"
+			}
+			id: "4CF1508D0100D433"
+			rewards: [{
+				id: "3A451C1F3B305AF0"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "77A4281D4C51B9EB"
+				item: { count: 4, id: "irons_spellbooks:blood_vial" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"2B4B0BCF6B5D7014"
+				"4E894AA6CE4C05E3"
+			]
+			id: "4D2DD9CE2F9F5B01"
+			size: 1.5d
+			rewards: [{
+				id: "0CA1041383A53D31"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "67E1CCD1347E7322"
+				item: { count: 1, id: "irons_spellbooks:diamond_spell_book" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4D2DD9CE2F9F5B01"]
+			id: "6C17E018084F30E2"
+			rewards: [{
+				id: "1DC95A4AAE00EAA5"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "2FDB9FB674228EB0"
+				item: { count: 1, id: "irons_spellbooks:arcane_anvil" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6C17E018084F30E2"]
+			id: "664DD0581C6E9305"
+			size: 1.5d
+			rewards: [{
+				id: "59FF84DDB750F1A3"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "0181CAF2B21E5F84"
+				item: { count: 1, id: "irons_spellbooks:netherite_spell_book" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6C17E018084F30E2"]
+			icon: {
+				id: "irons_spellbooks:bone_key"
+			}
+			id: "1F1459E331A3AE72"
+			shape: "hexagon"
+			size: 2d
+			rewards: [{
+				id: "1976CC122E0B9798"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "1D2571E06DD56357"
+				item: { count: 1, id: "irons_spellbooks:bone_key" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"664DD0581C6E9305"
+				"1F1459E331A3AE72"
+			]
+			id: "478F32EC491BF0AB"
+			size: 1.5d
+			rewards: [{
+				id: "3BFE91691B179272"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "37C5033DDCCBF78E"
+				item: { count: 1, id: "irons_spellbooks:magehunter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+	]
+}

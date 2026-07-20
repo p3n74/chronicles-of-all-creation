@@ -1,0 +1,145 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "bards_corner"
+	group: "165C7B28A1A813A1"
+	icon: {
+		id: "exposure:camera"
+	}
+	id: "468566A515EABFE1"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "13B7D7FD89F395E0"
+			rewards: [{
+				id: "48E11382C7DB3ED6"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "02CBCBD4F055DC31"
+				item: { count: 1, id: "exposure:camera" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13B7D7FD89F395E0"]
+			id: "7A2DCA807072CBAB"
+			rewards: [{
+				id: "5CAFDFEEE6549B3C"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "130A89DA01C39052"
+				item: { count: 1, id: "exposure:color_film" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A2DCA807072CBAB"]
+			id: "206BCBA643ECEBAC"
+			rewards: [{
+				id: "7210E1B533E28DEB"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "79AD7DFC668745CE"
+				item: { count: 1, id: "exposure:photograph" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["206BCBA643ECEBAC"]
+			id: "4B10122159CED50C"
+			rewards: [{
+				id: "0DF463863B6A5DE0"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "05B720B40E3F849E"
+				item: { count: 1, id: "exposure:lightroom" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["206BCBA643ECEBAC"]
+			id: "7FECBDAA5B985D8E"
+			rewards: [{
+				id: "1D1A8BC3BC37A993"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "06C87296357DAE31"
+				item: { count: 1, id: "exposure:album" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4B10122159CED50C"
+				"7FECBDAA5B985D8E"
+			]
+			id: "39B70374C474E549"
+			rewards: [{
+				id: "1F973BFB77E4AFFF"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "0DAA51FB56D8A3F5"
+				item: { count: 1, id: "etched:etching_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["39B70374C474E549"]
+			id: "40DF152CAFF47041"
+			rewards: [{
+				id: "40C2FE15B28D81A7"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "2217D097264416FC"
+				item: { count: 1, id: "etched:blank_music_disc" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["40DF152CAFF47041"]
+			id: "3ECEC57DB812F569"
+			size: 1.5d
+			rewards: [{
+				id: "214E3C9AD79E022B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "23118EFBCFD5DD94"
+				item: { count: 1, id: "etched:boombox" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+	]
+}

@@ -1,0 +1,92 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "menagerie"
+	group: "165C7B28A1A813A1"
+	icon: {
+		id: "adorablehamsterpets:sunflower_seeds"
+	}
+	id: "0F4CD3F28AC591D6"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "38339A381E525D56"
+			rewards: [{
+				id: "154F75897E069016"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "0964381941F9D4B5"
+				item: { count: 16, id: "adorablehamsterpets:sunflower_seeds" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38339A381E525D56"]
+			id: "202ACC3B448AF062"
+			rewards: [{
+				id: "71B0D69C35236497"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "4BB652AF284F7DCD"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["202ACC3B448AF062"]
+			id: "4029EC9D334E728D"
+			rewards: [{
+				id: "261ED8366AE974D8"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6A960C628B452D48"
+				item: { count: 1, id: "adorablehamsterpets:hamster_bedding" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4029EC9D334E728D"]
+			id: "035963B5A3640203"
+			rewards: [{
+				id: "7D3A67A31757D07B"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "066D60B505B26D50"
+				item: { count: 1, id: "adorablehamsterpets:hamster_bed_oak" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["035963B5A3640203"]
+			id: "3EF651646B01523B"
+			size: 1.5d
+			rewards: [{
+				id: "709EBAAEC94E96C6"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "65534D0146B4CA50"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+}

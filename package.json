@@ -11,7 +11,9 @@
     "build": "turbo run build",
     "check-types": "turbo run check-types",
     "dev:web": "turbo run dev -F web",
-    "dev:server": "turbo run dev -F server"
+    "dev:server": "turbo run dev -F server",
+    "assemble:quest-icons": "python3 scripts/assemble-block-icons.py",
+    "export:quests": "python3 scripts/assemble-block-icons.py && node scripts/export-ftb-quests.mjs"
   },
   "dependencies": {
     "@chronicles-of-all-creation/env": "workspace:*",

@@ -1,0 +1,144 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "rubber_road"
+	group: "62A749137B71D06F"
+	icon: {
+		id: "automobility:automobile_assembler"
+	}
+	id: "7467D2CA33C114F6"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0586B26B2D43143C"
+			rewards: [{
+				id: "7D1225FFC4673AFD"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "4E7999953A2A37ED"
+				item: { count: 1, id: "automobility:automobile_assembler" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0586B26B2D43143C"]
+			id: "09C7236BC3E8B2D0"
+			rewards: [{
+				id: "16435D5F2BA9A619"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "6BFF697888086B63"
+				item: { count: 1, id: "automobility:automobile_frame" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09C7236BC3E8B2D0"]
+			id: "0511ADD237B32C33"
+			rewards: [{
+				id: "6A54AA9E4797F20C"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "42BD9D8C21005519"
+				item: { count: 4, id: "automobility:automobile_wheel" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["09C7236BC3E8B2D0"]
+			id: "438F1D22AC08B904"
+			rewards: [{
+				id: "2574140325EFB064"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5DDE8F6B8365C959"
+				item: { count: 1, id: "automobility:automobile_engine" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0511ADD237B32C33"
+				"438F1D22AC08B904"
+			]
+			id: "68DCA12BFD01E883"
+			size: 1.5d
+			rewards: [{
+				id: "33FF821BCBC7830F"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "37BAEE5238D08FCE"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68DCA12BFD01E883"]
+			id: "3737C18D44317492"
+			rewards: [{
+				id: "7FD12177CC04CEC6"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "2C902EBBAAD4F97B"
+				item: { count: 1, id: "automobility:crowbar" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3737C18D44317492"]
+			id: "7D36D242F2C66F71"
+			rewards: [{
+				id: "76D5FF1FA0ADB293"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "7572FF3127D698D1"
+				item: { count: 1, id: "automobility:automobile_pressure_plate" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7D36D242F2C66F71"]
+			id: "462DED20AA7FDC9B"
+			size: 1.5d
+			rewards: [{
+				id: "1CA727FAE76905FB"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2B7F42E25ED06A75"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+	]
+}

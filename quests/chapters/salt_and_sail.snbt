@@ -1,0 +1,338 @@
+{
+
+	default_hide_dependency_lines: false
+
+	default_quest_shape: "rsquare"
+
+	filename: "salt_and_sail"
+
+	group: "62A749137B71D06F"
+
+	icon: {
+
+		id: "smallships:oak_cog"
+
+	}
+
+	id: "1C49CCC6E08032C1"
+
+	order_index: 4
+
+	quest_links: [ ]
+
+	quests: [
+
+		{
+
+			id: "212B574D2D3E6E50"
+
+			rewards: [{
+
+				id: "3A347D77115673FC"
+
+				type: "xp"
+
+				xp: 50
+
+			}]
+
+			tasks: [{
+
+				id: "082A31265AC36BA9"
+
+				item: { count: 1, id: "smallships:sail" }
+
+				type: "item"
+
+			}]
+
+			x: 0.0d
+
+			y: 0.0d
+
+		}
+
+		{
+
+			dependencies: ["212B574D2D3E6E50"]
+
+			id: "44E32521AEEACE31"
+
+			rewards: [{
+
+				id: "631CABD5E421A8A4"
+
+				type: "xp"
+
+				xp: 40
+
+			}]
+
+			tasks: [{
+
+				id: "6F87845F614B011C"
+
+				item: { count: 3, id: "minecraft:oak_boat" }
+
+				type: "item"
+
+			}]
+
+			x: 0.0d
+
+			y: 1.5d
+
+		}
+
+		{
+
+			dependencies: ["44E32521AEEACE31"]
+
+			id: "61FB06A110489ABB"
+
+			size: 1.5d
+
+			rewards: [{
+
+				id: "7781E6A78B6C9F09"
+
+				type: "xp"
+
+				xp: 100
+
+			}]
+
+			tasks: [{
+
+				id: "3F147BB3886FAC65"
+
+				item: { count: 1, id: "smallships:oak_cog" }
+
+				type: "item"
+
+			}]
+
+			x: 0.0d
+
+			y: 3.0d
+
+		}
+
+		{
+
+			dependencies: ["61FB06A110489ABB"]
+
+			id: "6A08AF29AE3CDD0A"
+
+			rewards: [{
+
+				id: "3FE439AF20ECEAFD"
+
+				type: "xp"
+
+				xp: 125
+
+			}]
+
+			tasks: [{
+
+				id: "370828DFD4872F9B"
+
+				item: { count: 1, id: "smallships:oak_drakkar" }
+
+				type: "item"
+
+			}]
+
+			x: -2.0d
+
+			y: 4.5d
+
+		}
+
+		{
+
+			dependencies: ["61FB06A110489ABB"]
+
+			id: "311D1A5672ED449F"
+
+			rewards: [{
+
+				id: "5A7144C1A6C0EC98"
+
+				type: "xp"
+
+				xp: 125
+
+			}]
+
+			tasks: [{
+
+				id: "62D1D1CDD9571996"
+
+				item: { count: 1, id: "smallships:oak_galley" }
+
+				type: "item"
+
+			}]
+
+			x: 2.0d
+
+			y: 4.5d
+
+		}
+
+		{
+
+			dependencies: [
+
+				"6A08AF29AE3CDD0A"
+
+				"311D1A5672ED449F"
+
+			]
+
+			id: "4997D77E1BF15316"
+
+			size: 1.5d
+
+			rewards: [{
+
+				id: "6A57A1B4572A85F9"
+
+				type: "xp"
+
+				xp: 150
+
+			}]
+
+			tasks: [{
+
+				id: "0D924FC23A5002B0"
+
+				item: { count: 1, id: "smallships:oak_brigg" }
+
+				type: "item"
+
+			}]
+
+			x: 0.0d
+
+			y: 6.0d
+
+		}
+
+		{
+
+			dependencies: ["4997D77E1BF15316"]
+
+			id: "457E3A0A22698ABB"
+
+			rewards: [{
+
+				id: "5C2B3C03C06FAB44"
+
+				type: "xp"
+
+				xp: 125
+
+			}]
+
+			tasks: [{
+
+				id: "6048D85C5D922D4F"
+
+				item: { count: 1, id: "smallships:cannon" }
+
+				type: "item"
+
+			}]
+
+			x: -1.5d
+
+			y: 7.5d
+
+		}
+
+		{
+
+			dependencies: ["4997D77E1BF15316"]
+
+			icon: {
+
+				id: "smallships:cannon_ball"
+
+			}
+
+			id: "590BFE8A2EE4EC1B"
+
+			rewards: [{
+
+				id: "527ACB6B5EA14D05"
+
+				type: "xp"
+
+				xp: 100
+
+			}]
+
+			tasks: [{
+
+				id: "39A843D81713780F"
+
+				item: { count: 8, id: "smallships:cannon_ball" }
+
+				type: "item"
+
+			}]
+
+			x: 1.5d
+
+			y: 7.5d
+
+		}
+
+		{
+
+			dependencies: [
+
+				"457E3A0A22698ABB"
+
+				"590BFE8A2EE4EC1B"
+
+			]
+
+			id: "1D6CF2236C4250B2"
+
+			shape: "hexagon"
+
+			size: 1.5d
+
+			rewards: [{
+
+				id: "14C51CFE98DBAA7D"
+
+				type: "xp"
+
+				xp: 175
+
+			}]
+
+			tasks: [{
+
+				id: "5AC7565FAD772150"
+
+				type: "checkmark"
+
+			}]
+
+			x: 0.0d
+
+			y: 9.0d
+
+		}
+
+	]
+
+}
+

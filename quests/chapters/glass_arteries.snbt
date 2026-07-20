@@ -1,0 +1,128 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "glass_arteries"
+	group: "62A749137B71D06F"
+	icon: {
+		id: "create_hypertube:hypertube"
+	}
+	id: "37B4E13414DC47DA"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5C992BCE1030F3CD"
+			rewards: [{
+				id: "1EA20924F3C7BE7F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "5BC2AD07D4D6F21E"
+				item: { count: 16, id: "create_hypertube:hypertube" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C992BCE1030F3CD"]
+			id: "255ADB5A7652F208"
+			rewards: [{
+				id: "1CB504FF644AB435"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "586D28C14D3BAE47"
+				item: { count: 1, id: "create_hypertube:hypertube_entrance" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["255ADB5A7652F208"]
+			id: "2F9A9AB717FE6E87"
+			rewards: [{
+				id: "6F69331ADD9C639D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7FBFE6FB9E4C2A41"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2F9A9AB717FE6E87"]
+			id: "6BF0B4DD49B39126"
+			size: 1.5d
+			rewards: [{
+				id: "12D4013D09CBD941"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "6D470560071E215A"
+				item: { count: 1, id: "create_hypertube:hypertube_accelerator" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6BF0B4DD49B39126"]
+			id: "2EC66F6F086AE041"
+			rewards: [{
+				id: "4BC87786CEBC5549"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1EC96EF195B24157"
+				item: { count: 1, id: "create_hypertube:tube_scanner_attachment" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6BF0B4DD49B39126"]
+			id: "3AFD3D4BE155DDA9"
+			rewards: [{
+				id: "1526268E4C124C64"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1C680A17D27E46E3"
+				item: { count: 1, id: "create_hypertube:redstone_detector_tube_attachment" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2EC66F6F086AE041"
+				"3AFD3D4BE155DDA9"
+			]
+			id: "7846B1F63220D3B5"
+			size: 1.5d
+			rewards: [{
+				id: "0E1404F06594CEC9"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "7476C612722B64D4"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+}

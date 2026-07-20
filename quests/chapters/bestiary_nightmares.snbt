@@ -1,0 +1,452 @@
+{
+
+	default_hide_dependency_lines: false
+
+	default_quest_shape: "rsquare"
+
+	filename: "bestiary_nightmares"
+
+	group: "2F1B76FFDC1A8831"
+
+	icon: {
+
+		id: "mutantmonsters:hulk_hammer"
+
+	}
+
+	id: "57D3C8EC243370CF"
+
+	order_index: 1
+
+	quest_links: [ ]
+
+	quests: [
+
+		{
+
+			icon: {
+
+				id: "mutantmonsters:hulk_hammer"
+
+			}
+
+			id: "51AC56211A26DB56"
+
+			rewards: [{
+
+				id: "0B5A04608F04A0BD"
+
+				type: "xp"
+
+				xp: 125
+
+			}]
+
+			tasks: [{
+
+				id: "29B8899919BADB43"
+
+				item: { count: 1, id: "mutantmonsters:hulk_hammer" }
+
+				type: "item"
+
+			}]
+
+			x: 0.0d
+
+			y: 0.0d
+
+		}
+
+		{
+
+			dependencies: ["51AC56211A26DB56"]
+
+			icon: {
+
+				id: "minecraft:splash_potion"
+
+			}
+
+			id: "64D99F583CF70969"
+
+			rewards: [{
+
+				id: "537F33C4C03F26C3"
+
+				type: "xp"
+
+				xp: 100
+
+			}]
+
+			tasks: [{
+
+				id: "7424B9F4D10CB2E1"
+
+				item: {
+
+					components: {
+
+						"minecraft:potion_contents": {
+
+							potion: "mutantmonsters:chemical_x"
+
+						}
+
+					}
+
+					count: 1
+
+					id: "minecraft:splash_potion"
+
+				}
+
+				type: "item"
+
+			}]
+
+			x: 0.0d
+
+			y: 1.5d
+
+		}
+
+		{
+
+			dependencies: ["64D99F583CF70969"]
+
+			icon: {
+
+				id: "mutantmonsters:creeper_shard"
+
+			}
+
+			id: "0CDB6F69D54DD275"
+
+			rewards: [{
+
+				id: "107AB4EAD4BDB1AE"
+
+				type: "xp"
+
+				xp: 100
+
+			}]
+
+			tasks: [{
+
+				id: "3595602DC13CD920"
+
+				item: { count: 1, id: "mutantmonsters:creeper_shard" }
+
+				type: "item"
+
+			}]
+
+			x: -1.5d
+
+			y: 3.0d
+
+		}
+
+		{
+
+			dependencies: ["64D99F583CF70969"]
+
+			icon: {
+
+				id: "mutantmonsters:mutant_skeleton_skull"
+
+			}
+
+			id: "1EDEDE035D567D1D"
+
+			rewards: [{
+
+				id: "4A9E4B7A8A3AEB07"
+
+				type: "xp"
+
+				xp: 100
+
+			}]
+
+			tasks: [{
+
+				id: "376AEC3861CBC84D"
+
+				item: { count: 1, id: "mutantmonsters:mutant_skeleton_skull" }
+
+				type: "item"
+
+			}]
+
+			x: 1.5d
+
+			y: 3.0d
+
+		}
+
+		{
+
+			dependencies: [
+
+				"51AC56211A26DB56"
+
+				"0CDB6F69D54DD275"
+
+				"1EDEDE035D567D1D"
+
+			]
+
+			icon: {
+
+				id: "mowziesmobs:naga_fang"
+
+			}
+
+			id: "1D815819F5DCC208"
+
+			rewards: [{
+
+				id: "1578ED37F00990CB"
+
+				type: "xp"
+
+				xp: 125
+
+			}]
+
+			tasks: [{
+
+				id: "610C0D73D8F9B832"
+
+				item: { count: 1, id: "mowziesmobs:naga_fang" }
+
+				type: "item"
+
+			}]
+
+			x: -1.5d
+
+			y: 4.5d
+
+		}
+
+		{
+
+			dependencies: [
+
+				"51AC56211A26DB56"
+
+				"0CDB6F69D54DD275"
+
+				"1EDEDE035D567D1D"
+
+			]
+
+			icon: {
+
+				id: "mowziesmobs:wrought_axe"
+
+			}
+
+			id: "7B7F28A96E621A47"
+
+			rewards: [{
+
+				id: "3957CD9A9CF4B965"
+
+				type: "xp"
+
+				xp: 150
+
+			}]
+
+			tasks: [{
+
+				id: "60DE865D529D1C1C"
+
+				item: { count: 1, id: "mowziesmobs:wrought_axe" }
+
+				type: "item"
+
+			}]
+
+			x: 1.5d
+
+			y: 4.5d
+
+		}
+
+		{
+
+			dependencies: [
+
+				"1D815819F5DCC208"
+
+				"7B7F28A96E621A47"
+
+			]
+
+			icon: {
+
+				id: "cataclysm:flame_eye"
+
+			}
+
+			id: "25198F97132FDCD3"
+
+			rewards: [{
+
+				id: "0E4EA4802A7AE2E9"
+
+				type: "xp"
+
+				xp: 150
+
+			}]
+
+			tasks: [{
+
+				id: "4B7B7FF06B5CCC39"
+
+				item: { count: 1, id: "cataclysm:flame_eye" }
+
+				type: "item"
+
+			}]
+
+			x: 0.0d
+
+			y: 6.0d
+
+		}
+
+		{
+
+			dependencies: ["25198F97132FDCD3"]
+
+			icon: {
+
+				id: "cataclysm:ignitium_ingot"
+
+			}
+
+			id: "2CC4552639A364B2"
+
+			shape: "hexagon"
+
+			size: 1.5d
+
+			rewards: [{
+
+				id: "372A1F4E1AEB3CB7"
+
+				type: "xp"
+
+				xp: 250
+
+			}]
+
+			tasks: [{
+
+				id: "35CF6A4FE42A3892"
+
+				item: { count: 3, id: "cataclysm:ignitium_ingot" }
+
+				type: "item"
+
+			}]
+
+			x: -1.5d
+
+			y: 7.5d
+
+		}
+
+		{
+
+			dependencies: ["25198F97132FDCD3"]
+
+			id: "05372BF32EEC09F4"
+
+			size: 1.5d
+
+			rewards: [{
+
+				id: "0A3F8DD9A5DDDB6A"
+
+				type: "xp"
+
+				xp: 200
+
+			}]
+
+			tasks: [{
+
+				id: "25E4770A0BB4037D"
+
+				item: { count: 1, id: "cataclysm:music_disc_ignis" }
+
+				type: "item"
+
+			}]
+
+			x: 1.5d
+
+			y: 7.5d
+
+		}
+
+		{
+
+			dependencies: [
+
+				"2CC4552639A364B2"
+
+				"05372BF32EEC09F4"
+
+			]
+
+			icon: {
+
+				id: "illagerinvasion:horn_of_sight"
+
+			}
+
+			id: "6F6827749F25BA82"
+
+			size: 1.5d
+
+			rewards: [{
+
+				id: "01D10E740E79D08E"
+
+				type: "xp"
+
+				xp: 150
+
+			}]
+
+			tasks: [{
+
+				id: "29DA57BAD74E55AB"
+
+				item: { count: 1, id: "illagerinvasion:horn_of_sight" }
+
+				type: "item"
+
+			}]
+
+			x: 0.0d
+
+			y: 9.0d
+
+		}
+
+	]
+
+}
+

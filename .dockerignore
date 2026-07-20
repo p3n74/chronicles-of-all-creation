@@ -1,0 +1,14 @@
+.git
+node_modules
+**/node_modules
+**/dist
+**/.turbo
+.env
+**/.env
+*.log
+
+# Source material not needed for the web build
+# (quest data is already exported to apps/web/src/lib/generated
+#  and icons to apps/web/public/quest-icons)
+icons
+quests

@@ -1,0 +1,94 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "hearts_homesteads"
+	group: "165C7B28A1A813A1"
+	icon: {
+		id: "mca:engagement_ring"
+	}
+	id: "615B2012AD07FA4D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "19C11A87CD05D159"
+			rewards: [{
+				id: "1D86CFADFAE1D8F6"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "093D2688146B84DE"
+				item: { count: 1, id: "mca:matchmakers_ring" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19C11A87CD05D159"]
+			id: "755A78B70CDA206A"
+			rewards: [{
+				id: "1154533DD9732FF9"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "0FB00CEF9F06C90B"
+				item: { count: 1, id: "mca:engagement_ring" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["755A78B70CDA206A"]
+			id: "4C05BE762A91BCE9"
+			size: 1.5d
+			rewards: [{
+				id: "5B338A29ED61B7E2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0D8C5A5BE28691DC"
+				item: { count: 1, id: "mca:wedding_ring" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C05BE762A91BCE9"]
+			id: "124E8A72A62E7D5D"
+			rewards: [{
+				id: "5EC17DDB60F0D4BA"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "396E9802F704587D"
+				item: { count: 1, id: "mca:book_family" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["124E8A72A62E7D5D"]
+			id: "087EA2D6C4A26733"
+			rewards: [{
+				id: "23FF2C0536841DC3"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "21B091CE50070712"
+				item: { count: 1, id: "mca:rose_gold_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+}

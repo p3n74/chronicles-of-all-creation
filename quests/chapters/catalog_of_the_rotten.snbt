@@ -1,0 +1,238 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "catalog_of_the_rotten"
+	group: "2F1B76FFDC1A8831"
+	icon: {
+		id: "rottencreatures:frozen_rotten_flesh"
+	}
+	id: "2B17EBE277BE9082"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "rottencreatures:frozen_rotten_flesh"
+			}
+			id: "0A3149F1D6655C9E"
+			rewards: [{
+				id: "7BBFC2E66A2F1A22"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "12D730A948B1931E"
+				item: { count: 8, id: "rottencreatures:frozen_rotten_flesh" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A3149F1D6655C9E"]
+			id: "7B838D2AC07547F9"
+			rewards: [{
+				id: "287CFAB1CFAF18B1"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "369BFEF5BCC77FC2"
+				item: { count: 4, id: "rottencreatures:corrupted_wart" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B838D2AC07547F9"]
+			icon: {
+				id: "minecraft:splash_potion"
+			}
+			id: "4A59A805AFAB1D33"
+			size: 1.5d
+			rewards: [{
+				id: "0E89A4B5698F1801"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "6BBFC534822718DE"
+				item: {
+					components: {
+						"minecraft:potion_contents": {
+							potion: "rottencreatures:freeze"
+						}
+					}
+					count: 1
+					id: "minecraft:splash_potion"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A3149F1D6655C9E"]
+			icon: {
+				id: "rottencreatures:magma_rotten_flesh"
+			}
+			id: "6EF46025E9CB9B6D"
+			rewards: [{
+				id: "26C50FD8447A43DA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6DC29CECABD835BF"
+				item: { count: 8, id: "rottencreatures:magma_rotten_flesh" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0A3149F1D6655C9E"]
+			icon: {
+				id: "rottencreatures:spear"
+			}
+			id: "5A169C01E6B86085"
+			rewards: [{
+				id: "6D08BF4E4A4F3F73"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "567DAA49A5BCA596"
+				item: { count: 1, id: "rottencreatures:spear" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4A59A805AFAB1D33"]
+			icon: {
+				id: "rottencreatures:undead_miner_head"
+			}
+			id: "0905E0CA4477A2A7"
+			rewards: [{
+				id: "5BE4980351CAF5D4"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6C4CA591F65BC89E"
+				item: { count: 1, id: "rottencreatures:undead_miner_head" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0905E0CA4477A2A7"]
+			icon: {
+				id: "rottencreatures:swampy_head"
+			}
+			id: "13292E4545399170"
+			rewards: [{
+				id: "57E9CEDA33D7B0FA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "451CB90E29A27772"
+				item: { count: 1, id: "rottencreatures:swampy_head" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0905E0CA4477A2A7"]
+			icon: {
+				id: "rottencreatures:mummy_head"
+			}
+			id: "0FB8DD722108B1B7"
+			rewards: [{
+				id: "0F50CA97A7D7E718"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "53FAEECB874C521F"
+				item: { count: 1, id: "rottencreatures:mummy_head" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"13292E4545399170"
+				"0FB8DD722108B1B7"
+			]
+			icon: {
+				id: "rottencreatures:treasure_chest"
+			}
+			id: "1C5A62F8774888C4"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				id: "1AF1E30E8E9AB9E3"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "450A2E1BFB0FEB30"
+				item: { count: 1, id: "rottencreatures:treasure_chest" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"13292E4545399170"
+				"0FB8DD722108B1B7"
+			]
+			icon: {
+				id: "rottencreatures:immortal_head"
+			}
+			id: "31B28A9E621C87BE"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				id: "591B3E344BA829E1"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "6DD5D019834A8045"
+				item: { count: 1, id: "rottencreatures:immortal_head" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"1C5A62F8774888C4"
+				"31B28A9E621C87BE"
+			]
+			id: "2A76888848CD14CA"
+			size: 1.5d
+			rewards: [{
+				id: "73F258246CE3A060"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "230B3AC8520EB20B"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+	]
+}

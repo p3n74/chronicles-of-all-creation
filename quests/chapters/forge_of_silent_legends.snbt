@@ -1,0 +1,375 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "forge_of_silent_legends"
+	group: "2F1B76FFDC1A8831"
+	icon: {
+		id: "silentgear:pickaxe_blueprint"
+	}
+	id: "68A6C87963F2F2A6"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4CD056AE52362285"
+			rewards: [{
+				id: "44FDD420B6870AE5"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "240D4FF94F8350F2"
+				item: { count: 1, id: "silentgear:material_book" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4CD056AE52362285"]
+			id: "14F4CB8D1C00BC7A"
+			rewards: [{
+				id: "19DDA297A63C83CA"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "096E0F5C5C7A2F07"
+				item: { count: 1, id: "silentgear:stone_anvil" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["14F4CB8D1C00BC7A"]
+			id: "025ECCFDAD9B5FBE"
+			rewards: [{
+				id: "5548B7C425760EC1"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "0E3CEE0A2BE3AB7C"
+				item: { count: 1, id: "silentgear:crude_knife" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["025ECCFDAD9B5FBE"]
+			id: "44AB6FCB79CBF3C6"
+			rewards: [{
+				id: "1A4A592AF6DEEC85"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "7717C318C3A4799B"
+				item: { count: 8, id: "silentgear:template_board" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["44AB6FCB79CBF3C6"]
+			id: "371D3468DB25F20B"
+			rewards: [{
+				id: "1342876E73B45FEA"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "51418C67CA65743F"
+				item: { count: 8, id: "silentgear:blueprint_paper" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["371D3468DB25F20B"]
+			id: "0B29869E6E12C457"
+			rewards: [{
+				id: "7D025465FC31F28B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "03B00CD836AF7EA1"
+				item: { count: 1, id: "silentgear:pickaxe_blueprint" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["371D3468DB25F20B"]
+			id: "3602FE1E13EC6D91"
+			rewards: [{
+				id: "6585BAA1AC762F60"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6D099925B98D6E03"
+				item: { count: 1, id: "silentgear:rod_blueprint" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0B29869E6E12C457"
+				"3602FE1E13EC6D91"
+			]
+			id: "3655C0F600B7CFF5"
+			size: 1.5d
+			rewards: [{
+				id: "2FA8B69F8857EA1C"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "19A64CCA68546B68"
+				item: { count: 1, id: "silentgear:pickaxe" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3655C0F600B7CFF5"]
+			id: "1594A2B419DCB318"
+			rewards: [{
+				id: "0A91206FF8154F82"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "67D9D56096E86A5E"
+				item: { count: 1, id: "silentgear:tip_blueprint" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3655C0F600B7CFF5"]
+			id: "7BFEE776E8DA20EC"
+			rewards: [{
+				id: "7EAD13D155A62FF3"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "4B6E74445F59AB75"
+				item: { count: 1, id: "silentgear:crude_repair_kit" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["3655C0F600B7CFF5"]
+			id: "769B95DCBB0ABA22"
+			rewards: [{
+				id: "0FC715B1659B0496"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "41A04E3823FA2ADC"
+				item: { count: 1, id: "silentgear:blueprint_book" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1594A2B419DCB318"]
+			icon: {
+				id: "silentgear:crimson_iron_ingot"
+			}
+			id: "1E4D638D62C50093"
+			rewards: [{
+				id: "6B962CC7ECAF3347"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "6C845B0973A311DC"
+				item: { count: 8, id: "silentgear:crimson_iron_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["1E4D638D62C50093"]
+			icon: {
+				id: "silentgear:crimson_steel_ingot"
+			}
+			id: "0524336092039D69"
+			size: 1.5d
+			rewards: [{
+				id: "407B9C209A9FD991"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "151C4D91DB590958"
+				item: { count: 4, id: "silentgear:crimson_steel_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0524336092039D69"]
+			id: "52BDF2E53C108DFB"
+			rewards: [{
+				id: "50781F77FF67845D"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "68BC414135617C89"
+				item: { count: 1, id: "silentgear:alloy_forge" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["52BDF2E53C108DFB"]
+			icon: {
+				id: "silentgear:blaze_gold_ingot"
+			}
+			id: "7FC0E46705B2DB23"
+			rewards: [{
+				id: "03C266B204A61686"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "50B2D15201B7E5EA"
+				item: { count: 4, id: "silentgear:blaze_gold_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["7FC0E46705B2DB23"]
+			id: "573DAB496AD8725A"
+			rewards: [{
+				id: "6AEBB54E195F8458"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "1B2AF06C6BD4EEF8"
+				item: { count: 1, id: "silentgear:material_grader" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"0524336092039D69"
+				"573DAB496AD8725A"
+			]
+			icon: {
+				id: "silentgear:azure_silver_ingot"
+			}
+			id: "1B78FF3D4E88AC57"
+			rewards: [{
+				id: "767563E52290F320"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "3304777B1AE7D440"
+				item: { count: 8, id: "silentgear:azure_silver_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1B78FF3D4E88AC57"]
+			icon: {
+				id: "silentgear:azure_electrum_ingot"
+			}
+			id: "3213B6F83F9994D2"
+			size: 1.5d
+			rewards: [{
+				id: "74E354D6AA506E1A"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "7BEE03986FF66100"
+				item: { count: 4, id: "silentgear:azure_electrum_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["3213B6F83F9994D2"]
+			id: "2B1369B97828DDFA"
+			rewards: [{
+				id: "21C4D6BB6E9931DA"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "459A00ACCDC3D28D"
+				item: { count: 1, id: "silentgear:recrystallizer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["2B1369B97828DDFA"]
+			id: "68FD1D53F7CDA54D"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				id: "32ABE482DF508335"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "3C8FA50ABCB9DB78"
+				item: { count: 1, id: "silentgear:starlight_charger" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["68FD1D53F7CDA54D"]
+			id: "364E24250D16CCBB"
+			size: 1.5d
+			rewards: [{
+				id: "54C96240B4B36FC3"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "44F39110391311C6"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 22.5d
+		}
+	]
+}

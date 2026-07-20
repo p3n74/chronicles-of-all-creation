@@ -1,0 +1,144 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "tea_and_temper"
+	group: "0ED9F00893D42C69"
+	icon: {
+		id: "farmersrespite:kettle"
+	}
+	id: "7ABEA42EB6196BE6"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0E6711C730B58E48"
+			rewards: [{
+				id: "0D7D051974F7B448"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3F48FA8B5E51252F"
+				item: { count: 1, id: "farmersrespite:kettle" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E6711C730B58E48"]
+			id: "150478D93C8F7AFE"
+			rewards: [{
+				id: "58A7F33DB2D76D43"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "0CECF7052356BDCE"
+				item: { count: 8, id: "farmersrespite:green_tea_leaves" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["150478D93C8F7AFE"]
+			id: "6B3FA93F4EF5FA9A"
+			rewards: [{
+				id: "66BC306F62443D0E"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "470B8E49C772965E"
+				item: { count: 1, id: "farmersrespite:green_tea" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E6711C730B58E48"]
+			id: "7381931033EDB3EE"
+			rewards: [{
+				id: "7CAB135F5EBAD5E4"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "017243493E7ED019"
+				item: { count: 8, id: "farmersrespite:coffee_berries" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7381931033EDB3EE"]
+			id: "1DC93CB0B4E16581"
+			rewards: [{
+				id: "704620C329DBE5B8"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "588453461C05AEC1"
+				item: { count: 1, id: "farmersrespite:coffee" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6B3FA93F4EF5FA9A"
+				"1DC93CB0B4E16581"
+			]
+			id: "65DB7ED8833218F3"
+			rewards: [{
+				id: "650CE1FDF3751C6B"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "59136226F125A4B6"
+				item: { count: 1, id: "farmersrespite:black_tea" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["65DB7ED8833218F3"]
+			id: "4BC7CC793291ADDA"
+			size: 1.5d
+			rewards: [{
+				id: "518D1BA239B15AC6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4B8C1E962A066658"
+				item: { count: 1, id: "farmersrespite:gamblers_tea" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4BC7CC793291ADDA"]
+			id: "1ABEE2232C249140"
+			rewards: [{
+				id: "26447DEC74A141E7"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "4F4D27BD1CB94D56"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+}

@@ -24,7 +24,7 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
       {
         name: "description",
         content:
-          "Chronicles of All Creation — a Create-driven Minecraft modpack where machinery carries you from your first cogwheel to colonies among the stars. Join at minecraft.citadel-codex.com",
+          "Chronicles of All Creation: a Create-driven Minecraft modpack where machinery carries you from your first cogwheel to colonies among the stars. Join at minecraft.citadel-codex.com",
       },
       {
         property: "og:title",

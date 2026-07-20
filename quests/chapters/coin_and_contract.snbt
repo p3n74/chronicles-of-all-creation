@@ -1,0 +1,128 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "coin_and_contract"
+	group: "165C7B28A1A813A1"
+	icon: {
+		id: "numismatics:spur"
+	}
+	id: "0A097882AEEFA8A6"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5C20D2A372184DC4"
+			rewards: [{
+				id: "15E6AC237DFAB3A0"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "6B8E816A427E6CE8"
+				item: { count: 16, id: "numismatics:spur" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C20D2A372184DC4"]
+			id: "5C592DC768107BD9"
+			rewards: [{
+				id: "7986DD9197066353"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6993B1B3FCCE24D4"
+				item: { count: 8, id: "numismatics:bevel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5C592DC768107BD9"]
+			id: "1F012E125F293D2A"
+			rewards: [{
+				id: "6A74B13C06281CC1"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "76B3C4B6F9641244"
+				item: { count: 4, id: "numismatics:cog" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1F012E125F293D2A"]
+			id: "7E7D75C6FEC590EA"
+			rewards: [{
+				id: "54AD5686CDA4EBC7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "10B15C961618AFE2"
+				item: { count: 1, id: "numismatics:vendor" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1F012E125F293D2A"]
+			id: "36BB24B5C4BBD638"
+			rewards: [{
+				id: "08543CCBE728ABB2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7427F4A4A2269BD3"
+				item: { count: 1, id: "numismatics:bank_terminal" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7E7D75C6FEC590EA"
+				"36BB24B5C4BBD638"
+			]
+			id: "0F40FB2C6280D187"
+			size: 1.5d
+			rewards: [{
+				id: "1547FAF622E414A3"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2D423994053F6751"
+				item: { count: 1, id: "bountiful:bountyboard" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F40FB2C6280D187"]
+			id: "6D4C7E3E8A06721E"
+			rewards: [{
+				id: "2BC2902E5DA1D969"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "1C10500477BC4159"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+}

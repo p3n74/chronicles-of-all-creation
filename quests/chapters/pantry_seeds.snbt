@@ -1,0 +1,151 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "pantry_seeds"
+	group: "0ED9F00893D42C69"
+	icon: {
+		id: "pamhc2crops:tomatoitem"
+	}
+	id: "1DE5CEB78C2CEF11"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "34A61CE6A94E4E2D"
+			rewards: [{
+				id: "6DF33FBDA9901DCA"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "30F743345B5BF014"
+				item: { count: 8, id: "pamhc2crops:tomatoitem" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34A61CE6A94E4E2D"]
+			id: "73A2EF512639E74A"
+			rewards: [{
+				id: "40B737E05AE0F40D"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "4D4754F29E76505E"
+				item: { count: 8, id: "pamhc2crops:cornitem" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["34A61CE6A94E4E2D"]
+			id: "2342BC097D079087"
+			rewards: [{
+				id: "0F22EA41296D3FA9"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "14F684AFAC88EA31"
+				item: { count: 8, id: "pamhc2crops:lettuceitem" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["73A2EF512639E74A"]
+			id: "5BB4377CBEC06686"
+			rewards: [{
+				id: "2E9B41966DFD2E4F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2030363139558541"
+				item: { count: 8, id: "pamhc2crops:barleyitem" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2342BC097D079087"]
+			id: "3F26290467C8DBDE"
+			rewards: [{
+				id: "48766CDF224E3894"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "30FB170F78D6603A"
+				item: { count: 8, id: "pamhc2crops:onionitem" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5BB4377CBEC06686"
+				"3F26290467C8DBDE"
+			]
+			id: "7181773B8CDFF326"
+			rewards: [{
+				id: "3553E45F77B2127E"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "2C39435FDE462E69"
+				item: { count: 8, id: "pamhc2crops:riceitem" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7181773B8CDFF326"]
+			id: "0916D8DA7D8F74E5"
+			rewards: [{
+				id: "332B743C27DFC41E"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [
+				{
+					id: "05E58381CF71BFF2"
+					item: { count: 1, id: "pamhc2crops:tomatoseeditem" }
+					type: "item"
+				}
+				{
+					id: "54CD67C2F4854B2F"
+					item: { count: 1, id: "pamhc2crops:cornseeditem" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0916D8DA7D8F74E5"]
+			id: "5FAFECF2F46CDE5F"
+			size: 1.5d
+			rewards: [{
+				id: "35E80A601176E14D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4D4F1D280B0D3380"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+}

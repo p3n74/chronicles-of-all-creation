@@ -1,0 +1,186 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "depths_and_realms"
+	group: "2F1B76FFDC1A8831"
+	icon: {
+		id: "minecraft:echo_shard"
+	}
+	id: "0B3B7CDEE5588298"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "555934A02B386D83"
+			rewards: [{
+				id: "2156AE089D55C123"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2F67266D98452A8C"
+				item: { count: 1, id: "minecraft:echo_shard" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["555934A02B386D83"]
+			id: "05C710ECB303F13D"
+			rewards: [{
+				id: "6DA406AAB1E66A3B"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "4FD8A890C2462E67"
+				item: { count: 1, id: "deeperdarker:heart_of_the_deep" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["05C710ECB303F13D"]
+			icon: {
+				id: "deeperdarker:resonarium"
+			}
+			id: "278071B73B5FA942"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				id: "7CC9DAE3BBF61C2D"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "1059B227CE25C72F"
+				item: { count: 1, id: "deeperdarker:resonarium" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["278071B73B5FA942"]
+			id: "1428F32CD108BF77"
+			rewards: [{
+				id: "1C10DB0280C9B7C5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1C6E4CD03739E205"
+				item: { count: 8, id: "deeperdarker:bloom_berries" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["278071B73B5FA942"]
+			id: "75748FE72C1B5D17"
+			rewards: [{
+				id: "1F8146149313D956"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "3950113878C3781C"
+				item: { count: 1, id: "deeperdarker:reinforced_echo_shard" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1428F32CD108BF77"]
+			id: "5D80CE669176A013"
+			rewards: [{
+				id: "24B220F58A48B2D2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "68F401EBF1EF8F31"
+				item: { count: 1, id: "galosphere:pink_salt_shard" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5D80CE669176A013"]
+			id: "57BC5B06F361E22B"
+			rewards: [{
+				id: "275B4B4A2C77EE72"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "48BC46C94D44ECE1"
+				item: { count: 1, id: "galosphere:lumiere_block" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["75748FE72C1B5D17"]
+			icon: {
+				id: "eternal_starlight:lunar_berries"
+			}
+			id: "7C21DEE87AC1FB9C"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				id: "2AA93ECF3C265DA8"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "60B1BE9B02051D2C"
+				item: { count: 1, id: "eternal_starlight:lunar_berries" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7C21DEE87AC1FB9C"]
+			id: "4F49A535FFCD8347"
+			rewards: [{
+				id: "7B48A4E166C553D1"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "7D08929887643C27"
+				item: { count: 1, id: "eternal_starlight:aethersent_ingot" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"57BC5B06F361E22B"
+				"4F49A535FFCD8347"
+			]
+			id: "24BCE99DE622009F"
+			size: 1.5d
+			rewards: [{
+				id: "13A3997D6CCAAAFF"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "6A2FC25CF42A847C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+	]
+}

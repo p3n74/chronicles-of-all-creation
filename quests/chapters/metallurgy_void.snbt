@@ -1,0 +1,216 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "metallurgy_void"
+	group: "59C57AB9716E3A08"
+	icon: {
+		id: "stellaris:steel_ingot"
+	}
+	id: "79BF01AEDED81C1F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "16B1BB696EDBE79C"
+			rewards: [{
+				id: "4BD9323302FF8C0D"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "66F529E0A9ECBC71"
+				item: { count: 16, id: "stellaris:steel_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16B1BB696EDBE79C"]
+			id: "1B0667A8AE53486E"
+			rewards: [{
+				id: "0D20D2F9867F3393"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "23721DE7201C883E"
+				item: { count: 8, id: "stellaris:heavy_metal_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B0667A8AE53486E"]
+			id: "0620CA743AAEE5BD"
+			rewards: [{
+				id: "568A40C4EFC51DB8"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "7B8AA990C48090ED"
+				item: { count: 1, id: "stellaris:water_pump" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1B0667A8AE53486E"]
+			id: "137AEA578834DFBF"
+			rewards: [{
+				id: "3C62B5FF98C0B754"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "1689009987390568"
+				item: { count: 1, id: "stellaris:water_separator" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0620CA743AAEE5BD"
+				"137AEA578834DFBF"
+			]
+			id: "3887F8182C4C66FF"
+			rewards: [{
+				id: "20EEB6C262445ED4"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "4BC36A1615D0604B"
+				item: { count: 1, id: "stellaris:coal_generator" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3887F8182C4C66FF"]
+			id: "795EF87069584F65"
+			rewards: [{
+				id: "5F02A8657DEE184C"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "3A7537C4CFC21423"
+				item: { count: 1, id: "stellaris:oxygen_tank" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3887F8182C4C66FF"]
+			id: "5A57362A613609F7"
+			rewards: [{
+				id: "353297DA0111CA12"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "440FC1A27C1BA393"
+				item: { count: 1, id: "stellaris:engine_fan" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"795EF87069584F65"
+				"5A57362A613609F7"
+			]
+			id: "2D79DA962F7FF164"
+			size: 1.5d
+			rewards: [{
+				id: "226F03A3CC28D125"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "303AA83555C1CC43"
+				item: { count: 1, id: "stellaris:big_oxygen_tank" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2D79DA962F7FF164"]
+			id: "31F4FE6F0B29B301"
+			rewards: [{
+				id: "666B0E7CEC420E41"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "2E94EE32FD17D176"
+				item: { count: 1, id: "stellaris:oil_finder" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2D79DA962F7FF164"]
+			id: "44654FE08BA24B37"
+			rewards: [{
+				id: "3CAF0473F354A228"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "336315D5E70F8B13"
+				item: { count: 1, id: "stellaris:pumpjack" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"31F4FE6F0B29B301"
+				"44654FE08BA24B37"
+			]
+			id: "64A0DEB25E36DD26"
+			rewards: [{
+				id: "7A5975CD7B464297"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5DB0F4E664D2ABAD"
+				item: { count: 1, id: "stellaris:fuel_refinery" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["64A0DEB25E36DD26"]
+			id: "6E25406BB71D8F15"
+			size: 1.5d
+			rewards: [{
+				id: "1D5E4B7EBBB92555"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "417E73089C3991E2"
+				item: { count: 1, id: "stellaris:fuel_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+	]
+}

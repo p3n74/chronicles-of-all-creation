@@ -1,0 +1,144 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "adventurers_primer"
+	group: "4578270E41A43681"
+	icon: {
+		id: "naturescompass:naturescompass"
+	}
+	id: "69928B760A4ABAAB"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6404581E70ED891C"
+			rewards: [{
+				id: "719A88CC5BCCFBE8"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "4787082BCF85A84A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6404581E70ED891C"]
+			id: "19EE4283F12C1661"
+			rewards: [{
+				id: "039472BA1A649D8A"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "73A0511E6033F1B2"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["19EE4283F12C1661"]
+			id: "54905F916A884264"
+			rewards: [{
+				id: "446D7832DB7F25C8"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "533059B4A87E8DE0"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["19EE4283F12C1661"]
+			id: "2EF4E3AFEDA76985"
+			rewards: [{
+				id: "60A0B56A6BFE1DC7"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "140CA622EDA18F13"
+				item: { count: 1, id: "explorerscompass:explorerscompass" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"54905F916A884264"
+				"2EF4E3AFEDA76985"
+			]
+			id: "4F6AEBAF7F25AE4F"
+			rewards: [{
+				id: "286E3BEF9588CC31"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "1D7ADED8F6206259"
+				item: { count: 1, id: "waystones:waystone" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4F6AEBAF7F25AE4F"]
+			id: "52CE432D04610A01"
+			rewards: [{
+				id: "7E180B6E6103F91A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "21687BA751DAFAA3"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4F6AEBAF7F25AE4F"]
+			id: "70C05DE0661BCE8C"
+			size: 1.5d
+			rewards: [{
+				id: "6661978A9B6355F5"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "025C0BE1D091AF09"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"52CE432D04610A01"
+				"70C05DE0661BCE8C"
+			]
+			id: "11196AB8EB36AF8D"
+			rewards: [{
+				id: "5B656A0DDB88CB31"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3414CDEB62A7BA84"
+				item: { count: 8, id: "minecraft:bread" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+}

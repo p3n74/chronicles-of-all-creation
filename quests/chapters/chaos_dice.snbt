@@ -1,0 +1,75 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "chaos_dice"
+	group: "165C7B28A1A813A1"
+	icon: {
+		id: "minecraft:slime_ball"
+	}
+	id: "40AEF167AE3A5707"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "267639E2A2C452C7"
+			rewards: [{
+				id: "1AC321F5B105D34F"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "46D55190151E3000"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["267639E2A2C452C7"]
+			id: "5376543A0D1D5A0E"
+			rewards: [{
+				id: "42F7C635A5A0A552"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "6EF6AEA8F21EADF3"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5376543A0D1D5A0E"]
+			id: "60508A90FE91AABE"
+			rewards: [{
+				id: "781DA355DF6ACC0F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "070238864A73F5C9"
+				item: { count: 16, id: "minecraft:slime_ball" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["60508A90FE91AABE"]
+			id: "7C5C68A7D4FB0F13"
+			size: 1.5d
+			rewards: [{
+				id: "0F5144B24E1FF9AB"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "3290F747E2027AB2"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+	]
+}

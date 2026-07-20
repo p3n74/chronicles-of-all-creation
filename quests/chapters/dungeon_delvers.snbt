@@ -1,0 +1,177 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "dungeon_delvers"
+	group: "2F1B76FFDC1A8831"
+	icon: {
+		id: "explorerscompass:explorerscompass"
+	}
+	id: "6FE67901FDCD80E6"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5BB13CACE59CD653"
+			rewards: [{
+				id: "1E38EE40A94D396F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "40D9E9B23100C0B3"
+				item: { count: 1, id: "explorerscompass:explorerscompass" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BB13CACE59CD653"]
+			id: "1FBA60FD4FF5C2BD"
+			rewards: [{
+				id: "1D8684CF5CEB8883"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "2D78D6320993E823"
+				item: { count: 1, id: "lootr:trophy" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1FBA60FD4FF5C2BD"]
+			icon: {
+				id: "minecraft:golden_apple"
+			}
+			id: "0AA686E88AEFB3ED"
+			rewards: [{
+				id: "178A292B7B918CD3"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "16AEDC15640AE28D"
+				item: { count: 1, id: "minecraft:golden_apple" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1FBA60FD4FF5C2BD"]
+			icon: {
+				id: "minecraft:emerald"
+			}
+			id: "0AAAF55A23200080"
+			rewards: [{
+				id: "1E0BDA00BC516A12"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0DF71EF86B82940D"
+				item: { count: 8, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0AA686E88AEFB3ED"]
+			icon: {
+				id: "minecraft:blaze_rod"
+			}
+			id: "287F5EDFB2B78460"
+			rewards: [{
+				id: "3DE02C0BD6AE1E9C"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "74DB1A4D31781D6C"
+				item: { count: 1, id: "minecraft:blaze_rod" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0AAAF55A23200080"]
+			icon: {
+				id: "minecraft:prismarine_shard"
+			}
+			id: "65255B74E8CD9F42"
+			rewards: [{
+				id: "500D116207761701"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "1C7C53C19942ED7E"
+				item: { count: 16, id: "minecraft:prismarine_shard" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"287F5EDFB2B78460"
+				"65255B74E8CD9F42"
+			]
+			id: "7E2691DFDC6210A2"
+			rewards: [{
+				id: "69D1507E44541A60"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "42871CD6E258CC1A"
+				item: { count: 4, id: "minecraft:ender_eye" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7E2691DFDC6210A2"]
+			icon: {
+				id: "minecraft:echo_shard"
+			}
+			id: "0FDA8BBC592715A6"
+			size: 1.5d
+			rewards: [{
+				id: "48EBEBFC73871E6C"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "701DEF163ED9452A"
+				item: { count: 1, id: "minecraft:echo_shard" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0FDA8BBC592715A6"]
+			id: "77FB96CEA4AB0F4A"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				id: "6F2826A0B77BF4BE"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "2FBD0D1EF3C100DF"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+	]
+}

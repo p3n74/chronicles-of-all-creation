@@ -1,25 +1,31 @@
 @import "@chronicles-of-all-creation/ui/globals.css";
 
 :root {
-  --ink: #0a0d16;
-  --ink-soft: #10141f;
-  --ink-deep: #060810;
+  /* Warm black-and-tan family: off-black ink, parchment tan, single gold accent */
+  --ink: #100e0b;
+  --ink-soft: #171410;
+  --ink-deep: #0a0806;
   --parchment: #e9e2d0;
   --gold: #c9962e;
   --gold-bright: #e5b13f;
   --copper: #b3672f;
-  --steam: #7d95b5;
+  --steam: #8a8577;
   --ember: #d97706;
   --background: var(--ink);
   --foreground: var(--parchment);
   --primary: var(--gold);
   --primary-foreground: var(--ink);
-  --muted: #171c2a;
+  --muted: #1d1914;
   --muted-foreground: color-mix(in oklab, var(--parchment) 55%, transparent);
   --border: color-mix(in oklab, var(--gold) 18%, transparent);
   --ring: var(--gold);
   --font-display: "Cinzel", "Times New Roman", serif;
   --font-body: "Source Serif 4", Georgia, serif;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-ink: 0 18px 48px color-mix(in oklab, var(--ink-deep) 72%, transparent);
+  --z-nav: 40;
+  --z-overlay: 50;
+  --z-grain: 60;
 }
 
 @theme inline {
@@ -42,6 +48,12 @@
     scroll-behavior: smooth;
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
     font-family: var(--font-body);
     background: var(--ink);
@@ -52,6 +64,25 @@
     background: color-mix(in oklab, var(--gold) 40%, transparent);
     color: var(--parchment);
   }
+
+  :focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+  }
+}
+
+/* Fixed film grain — pointer-events none, not on scrolling containers */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-grain);
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 180px 180px;
+  mix-blend-mode: overlay;
 }
 
 @utility font-display {
@@ -73,6 +104,34 @@
   }
 }
 
+/* FTB Quests–style quest book canvas (tiled dark panel + marching dependency dashes) */
+.ftb-quest-canvas {
+  background-color: #141618;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.35) 1px, transparent 1px),
+    radial-gradient(ellipse at center, #1c1f24 0%, #0e1012 70%);
+  background-size:
+    64px 64px,
+    64px 64px,
+    16px 16px,
+    16px 16px,
+    auto;
+  background-position: center;
+}
+
+@keyframes ftb-dep-march {
+  to {
+    stroke-dashoffset: -26;
+  }
+}
+
+.ftb-dep-line-active {
+  animation: ftb-dep-march 0.7s linear infinite;
+}
+
 @keyframes hero-drift {
   from {
     transform: scale(1.05) translate3d(0, 0, 0);
@@ -83,7 +142,7 @@
 }
 
 @utility animate-fade-rise {
-  animation: fade-rise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: fade-rise 1s var(--ease-out-expo) both;
 }
 
 @utility animate-hero-drift {
@@ -100,4 +159,42 @@
 
 @utility delay-500 {
   animation-delay: 500ms;
+}
+
+.reveal-target {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.75s var(--ease-out-expo),
+    transform 0.75s var(--ease-out-expo);
+}
+
+.reveal-target.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.blueprint-rule {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklab, var(--gold) 35%, transparent) 12%,
+    color-mix(in oklab, var(--gold) 35%, transparent) 88%,
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-rise,
+  .animate-hero-drift,
+  .ftb-dep-line-active {
+    animation: none !important;
+  }
+
+  .reveal-target {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

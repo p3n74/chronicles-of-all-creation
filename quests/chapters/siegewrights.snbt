@@ -1,0 +1,198 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "siegewrights"
+	group: "7E80517FB425BBD0"
+	icon: {
+		id: "createbigcannons:cannon_builder"
+	}
+	id: "1E5782DAF18B0DBA"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3C4F51143072BB8A"
+			rewards: [{
+				id: "7799A1DC9B36D32D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "5170B259D4D410C0"
+				item: { count: 1, id: "createbigcannons:cannon_builder" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C4F51143072BB8A"]
+			id: "1493E23A98083615"
+			rewards: [{
+				id: "15DFBF6D1DB3C2C2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "52555DF9305A1E09"
+					item: { count: 1, id: "createbigcannons:wrought_iron_cannon_chamber" }
+					type: "item"
+				}
+				{
+					id: "032B36BD51CAC125"
+					item: { count: 1, id: "createbigcannons:wrought_iron_cannon_end" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1493E23A98083615"]
+			id: "31B87AC37CB3E2CC"
+			rewards: [{
+				id: "59EDDD11638BB06B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "6A507200D9940B35"
+					item: { count: 1, id: "createbigcannons:powder_charge" }
+					type: "item"
+				}
+				{
+					id: "3BA4523A63CCF7FF"
+					item: { count: 1, id: "createbigcannons:solid_shot" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["31B87AC37CB3E2CC"]
+			id: "31B4D453365FE5B4"
+			size: 1.5d
+			rewards: [{
+				id: "13341CC3C0FDE8A5"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "690D65A634971E79"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31B4D453365FE5B4"]
+			id: "2783CAF1AAD84EF0"
+			rewards: [{
+				id: "6D5901BFC3C98DE8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "02FAEA6754937CF7"
+				item: { count: 1, id: "createbigcannons:cannon_carriage" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["31B4D453365FE5B4"]
+			id: "72E2AB20D442137C"
+			rewards: [{
+				id: "7259C5F1ECB1664E"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "3FA41E1E9CBBC62F"
+				item: { count: 1, id: "createbigcannons:cannon_mount" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2783CAF1AAD84EF0"
+				"72E2AB20D442137C"
+			]
+			id: "1B9FFB7327C2A561"
+			size: 1.5d
+			rewards: [{
+				id: "77D6481CB990FA57"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "0D233D3213C82FA9"
+				item: { count: 1, id: "createbigcannons:steel_cannon_barrel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B9FFB7327C2A561"]
+			id: "0220211CDA8BA0CA"
+			rewards: [{
+				id: "7B868C0299EE1BAC"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "70CF5686A7849EE0"
+				item: { count: 1, id: "createbigcannons:cannon_loader" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1B9FFB7327C2A561"]
+			icon: {
+				id: "createbigcannons:he_shell"
+			}
+			id: "1A163E30B412DCAA"
+			rewards: [{
+				id: "7E6592B97D814151"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "7DB31A14298CD432"
+				item: { count: 1, id: "createbigcannons:he_shell" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0220211CDA8BA0CA"
+				"1A163E30B412DCAA"
+			]
+			id: "2B203DB449DC16ED"
+			size: 1.5d
+			rewards: [{
+				id: "20B5CB40CB40E1D7"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [{
+				id: "45536A48048A62E4"
+				item: { count: 1, id: "createbigcannons:cannon_welder" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+	]
+}

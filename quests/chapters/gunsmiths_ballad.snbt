@@ -1,0 +1,475 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "gunsmiths_ballad"
+	group: "2F1B76FFDC1A8831"
+	icon: {
+		id: "jeg:gunsmith_manual"
+	}
+	id: "7D530FE560415DC4"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "jeg:gunsmith_manual"
+			}
+			id: "744C8D9CF3502BEE"
+			rewards: [{
+				id: "2767050E9D673AA3"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "59A740B83BC35000"
+				item: { count: 1, id: "jeg:gunsmith_manual" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["744C8D9CF3502BEE"]
+			icon: {
+				id: "jeg:crowbar"
+			}
+			id: "3B625C236B78F952"
+			rewards: [{
+				id: "366320C62776FF2E"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "2C073A652644113F"
+				item: { count: 1, id: "jeg:crowbar" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3B625C236B78F952"]
+			icon: {
+				id: "jeg:waterpipe_shotgun"
+			}
+			id: "25904A7F25583374"
+			rewards: [{
+				id: "4F2DCBB25F57F537"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "44C8475819C65F53"
+				item: { count: 1, id: "jeg:waterpipe_shotgun" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3B625C236B78F952"]
+			icon: {
+				id: "jeg:revolver"
+			}
+			id: "2EAA0BD2EA0A445B"
+			rewards: [{
+				id: "27845946C1791E42"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "672029E30177693B"
+				item: { count: 1, id: "jeg:revolver" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"25904A7F25583374"
+				"2EAA0BD2EA0A445B"
+			]
+			icon: {
+				id: "jeg:pistol_ammo"
+			}
+			id: "421559E1C8B17AB3"
+			rewards: [{
+				id: "0BDC6913B83F0137"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "27400D2F39420134"
+				item: { count: 32, id: "jeg:pistol_ammo" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["421559E1C8B17AB3"]
+			icon: {
+				id: "jeg:handmade_shell"
+			}
+			id: "2C6DD489F61FB8EE"
+			rewards: [{
+				id: "734B0BDA9B4694FB"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "1E083F5077C15098"
+				item: { count: 16, id: "jeg:handmade_shell" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["421559E1C8B17AB3"]
+			icon: {
+				id: "jeg:combat_pistol"
+			}
+			id: "1C08800370494AE8"
+			rewards: [{
+				id: "3B1352611F295DAD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "15A5361C4E94057C"
+				item: { count: 1, id: "jeg:combat_pistol" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2C6DD489F61FB8EE"
+				"1C08800370494AE8"
+			]
+			icon: {
+				id: "jeg:pistol_magazine"
+			}
+			id: "010F92AE1F8D228F"
+			rewards: [{
+				id: "396E339200C7BC97"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "241031F2F5FD30B5"
+				item: { count: 1, id: "jeg:pistol_magazine" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["010F92AE1F8D228F"]
+			icon: {
+				id: "jeg:custom_smg"
+			}
+			id: "0F830E4858E7D6F2"
+			size: 1.5d
+			rewards: [{
+				id: "1FE2E5298D129E12"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [
+				{
+					id: "25705F24EAB5FE65"
+					item: { count: 1, id: "jeg:custom_smg" }
+					type: "item"
+				}
+				{
+					id: "397F5786F092EE48"
+					item: { count: 1, id: "jeg:smg_magazine" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["010F92AE1F8D228F"]
+			icon: {
+				id: "jeg:pump_shotgun"
+			}
+			id: "0C90105D493C1CB1"
+			size: 1.5d
+			rewards: [{
+				id: "174F831F5CF9045F"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [
+				{
+					id: "739489E8C6BCE1B2"
+					item: { count: 1, id: "jeg:pump_shotgun" }
+					type: "item"
+				}
+				{
+					id: "09EC2EC4A0BEDE1B"
+					item: { count: 1, id: "jeg:shotgun_shell" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0F830E4858E7D6F2"
+				"0C90105D493C1CB1"
+			]
+			icon: {
+				id: "jeg:semi_auto_rifle"
+			}
+			id: "0D74BC4369A5F80D"
+			size: 1.5d
+			rewards: [{
+				id: "15DEBB65CC19195E"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [
+				{
+					id: "5F73DAE3C8C04A2A"
+					item: { count: 1, id: "jeg:semi_auto_rifle" }
+					type: "item"
+				}
+				{
+					id: "46AC5121C3F72F87"
+					item: { count: 1, id: "jeg:rifle_ammo" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0D74BC4369A5F80D"]
+			icon: {
+				id: "jeg:makeshift_stock"
+			}
+			id: "2D6D6CCB9321A38D"
+			rewards: [{
+				id: "32AEAEA646DAA637"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "4ED9BE8B9E35E665"
+				item: { count: 1, id: "jeg:makeshift_stock" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0D74BC4369A5F80D"]
+			icon: {
+				id: "jeg:reflex_sight"
+			}
+			id: "3C3EAFCE893DDD56"
+			rewards: [{
+				id: "1102519BB709E17A"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "75F6703032338BB1"
+				item: { count: 1, id: "jeg:reflex_sight" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0D74BC4369A5F80D"]
+			icon: {
+				id: "jeg:light_grip"
+			}
+			id: "1FF9C2CF689A5D7B"
+			rewards: [{
+				id: "369B9B07B64C86A9"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				id: "7D0962BA193D6B43"
+				item: { count: 1, id: "jeg:light_grip" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"2D6D6CCB9321A38D"
+				"3C3EAFCE893DDD56"
+				"1FF9C2CF689A5D7B"
+			]
+			icon: {
+				id: "jeg:repair_kit"
+			}
+			id: "593F7D27EBE72E45"
+			rewards: [{
+				id: "5DCA734F62170704"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "75F7AE0900AE96FB"
+				item: { count: 1, id: "jeg:repair_kit" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["593F7D27EBE72E45"]
+			icon: {
+				id: "jeg:flare_gun"
+			}
+			id: "56FB5CF6454E2CBE"
+			rewards: [{
+				id: "3317830C8F8EDE7F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "0E0BAD329191A766"
+					item: { count: 1, id: "jeg:flare_gun" }
+					type: "item"
+				}
+				{
+					id: "549C395C8A6E134E"
+					item: { count: 1, id: "jeg:flare" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["593F7D27EBE72E45"]
+			icon: {
+				id: "jeg:bulletproof_vest_i"
+			}
+			id: "322C7590812F4889"
+			rewards: [{
+				id: "31DA46216E3028F7"
+				type: "xp"
+				xp: 125
+			}]
+			tasks: [{
+				id: "0D9960FD8F0774AE"
+				item: { count: 1, id: "jeg:bulletproof_vest_i" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"56FB5CF6454E2CBE"
+				"322C7590812F4889"
+			]
+			icon: {
+				id: "jeg:assault_rifle"
+			}
+			id: "02B8416D6A9390CE"
+			size: 1.5d
+			rewards: [{
+				id: "749E63C3623EAC84"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "22B0D93A5332DC74"
+				item: { count: 1, id: "jeg:assault_rifle" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["02B8416D6A9390CE"]
+			icon: {
+				id: "jeg:blossom_rifle"
+			}
+			id: "733A7B907267C0DF"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				id: "4038A847C22CC79B"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "44A48DA8B2F88D14"
+				item: { count: 1, id: "jeg:blossom_rifle" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["02B8416D6A9390CE"]
+			icon: {
+				id: "jeg:holy_shotgun"
+			}
+			id: "348C62A8ACF6B390"
+			shape: "hexagon"
+			size: 1.5d
+			rewards: [{
+				id: "15BA5D3B0EF0C299"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "5018DB1C18722DBE"
+				item: { count: 1, id: "jeg:holy_shotgun" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"733A7B907267C0DF"
+				"348C62A8ACF6B390"
+			]
+			icon: {
+				id: "jeg:repair_kit"
+			}
+			id: "094605D40953CD90"
+			size: 1.5d
+			rewards: [{
+				id: "0A58579CBBB332D1"
+				type: "xp"
+				xp: 175
+			}]
+			tasks: [
+				{
+					id: "624A48E808E732AC"
+					item: { count: 1, id: "jeg:repair_kit" }
+					type: "item"
+				}
+				{
+					id: "560E67BF45F80C31"
+					item: { count: 1, id: "jeg:gunsmith_manual" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 19.5d
+		}
+	]
+}
